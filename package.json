@@ -6,8 +6,8 @@
   "scripts": {
     "dev": "vite",
     "dev:server": "npx wrangler pages dev public --port 8787",
-    "build": "vite build",
-    "deploy": "wrangler pages deploy dist --project-name misub",
+    "build": "vite build && wrangler pages functions build functions --outdir dist/_worker.js --output-routes-path dist/_routes.json --build-output-directory dist --compatibility-date 2024-04-01 --compatibility-flag nodejs_compat",
+    "deploy": "wrangler deploy",
     "preview": "vite preview",
     "test": "vitest --passWithNoTests",
     "test:run": "vitest run --passWithNoTests",
