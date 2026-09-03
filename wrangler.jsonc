@@ -4,6 +4,13 @@
   "main": "./dist/_worker.js/index.js",
   "compatibility_date": "2024-04-01",
   "compatibility_flags": ["nodejs_compat"],
+  "keep_vars": true,
+  "kv_namespaces": [
+    {
+      "binding": "MISUB_KV",
+      "id": "939d0b0c709f44fe82b0886fff1b4696"
+    }
+  ],
   "assets": {
     "directory": "./dist",
     "binding": "ASSETS",
